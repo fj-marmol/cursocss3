@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+  	 <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+  	 <script type="text/javascript">
+  		$(document).ready(inicio)
+      	function inicio(){
+           $("select").change(cambiacss)
+         }
+         function cambiacss(){
+           
+           var plantilla = $("select").val();
+
+           $("plantilla").html('<link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css" />');
+           
+         }
+    </script>
+  	 <link rel=Stylesheet href="css/base.css" type="text/css" />
+    <title>Mi prueba HTML5</title>
+  	 <plantilla></plantilla>
+</head>
+<body>
+  <select name="plantilla">
+    <option value="">Selecciona una plantilla</option>
+    <option value="pc1">Plantilla para PC</option>
+    <option value="pchd">Plantilla alta definicion</option>
+    <option value="movil">Plantilla para teléfono móvil</option>
+    <option value="tablet">Plantilla para tableta</option>
+  </select>
+  <hr>
+	<div id="contenedor">
+		<header>
+      	<div id="titulo">
+           <div id="logo"></div>
+           <h1>Paco Mármol </h1>
+           <h2>
+             Eslogan de la página
+           </h2>
+        	</div>
+        <nav><ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          </ul></nav>
+    	</header>
+     <section>
+       <article class="artportafolio" id="porta1">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+       <article class="artportafolio" id="porta2">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+       <article class="artportafolio" id="porta3">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+       <article class="artportafolio" id="porta4">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+       <article class="artportafolio" id="porta5">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+       <article class="artportafolio" id="porta6">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+       <article class="artportafolio" id="porta7">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+       <article class="artportafolio" id="porta8">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+       <article class="artportafolio" id="porta9">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+       <article class="artportafolio" id="porta10">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+       <article class="artportafolio" id="porta11">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+       <article class="artportafolio" id="porta12">
+       	<h3>Titulo del proyecto</h3>
+         <p>Breve descripción</p>
+         <div id="imagen">
+           
+         </div>
+       </article>
+                                                                         
+     </section>
+    	<footer><h6>
+        (c) 2015 Paco Mármol
+        </h6>
+    	</footer>
+	</div>
+</body>
+</html>

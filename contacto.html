@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+  	 <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+  	 <script type="text/javascript">
+  		$(document).ready(inicio)
+      	function inicio(){
+           $("select").change(cambiacss)
+         }
+         function cambiacss(){
+           
+           var plantilla = $("select").val();
+
+           $("plantilla").html('<link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css" />');
+           
+         }
+    </script>
+  	 <link rel=Stylesheet href="css/base.css" type="text/css" />
+    <title>Mi prueba HTML5</title>
+  	 <plantilla></plantilla>
+</head>
+<body>
+  <select name="plantilla">
+    <option value="">Selecciona una plantilla</option>
+    <option value="pc1">Plantilla para PC</option>
+    <option value="pchd">Plantilla alta definicion</option>
+    <option value="movil">Plantilla para teléfono móvil</option>
+    <option value="tablet">Plantilla para tableta</option>
+  </select>
+  <hr>
+	<div id="contenedor">
+		<header>
+      	<div id="titulo">
+           <div id="logo"></div>
+           <h1>Paco Mármol </h1>
+           <h2>
+             Eslogan de la página
+           </h2>
+        	</div>
+        <nav><ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          </ul></nav>
+    	</header>
+     <section>
+     	<h3>Formulario de contacto </h3>
+      <p>Si desea ponerse en contacto conmigo rellene el formulario y pulse en enviar</p>
+      <form method="POST" action="procesaformulario.php">
+        <div class="formLeyenda">
+          Nombre:
+        </div>
+        <input type="text" name="nombre">
+        <div class="formLeyenda">
+          Correo electrónico:
+        </div>
+        <input type="text" name="email">
+        <div class="formLeyenda">
+          Mensaje:
+        </div>
+        <textarea name="mensaje"></textarea>
+        <input type="submit" value="Enviar">
+       </form>
+     </section>
+    	<footer><h6>
+        (c) 2015 Paco Mármol
+        </h6>
+    	</footer>
+	</div>
+</body>
+</html>
