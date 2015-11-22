@@ -70,3 +70,12 @@ ul li a{
 #banner:focus, article:focus{
 	height:300px;
 }
+
+
+#banner #bannercontenedor h3, article .contienearticulo h3{
+	background: url(../img/mano.jpg);
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	font-size:24px;
+}
+
