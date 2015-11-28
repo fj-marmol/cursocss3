@@ -173,3 +173,40 @@ form input,form textarea{
 	padding:10px;
 	display: block;
 }
+
+/* blog */
+
+#imgblog1{
+	background:url(../img/DSC_9140.JPG);
+	background-size:50% 100%;
+	background-repeat:no-repeat;
+	height:200px;
+}
+
+#imgblog2{
+	background:url(../img/DSC_9153.JPG);
+	background-size:50% 100%;
+	background-repeat:no-repeat;
+	height:200px;
+}
+
+#imgblog3{
+	background:url(../img/DSC_9180.JPG);
+	background-size:50% 100%;
+	background-repeat:no-repeat;
+	height:200px;
+}
+
+#imgblog4{
+	background:url(../img/DSC_9253.JPG);
+	background-size:50% 100%;
+	background-repeat:no-repeat;
+	height:200px;
+}
+
+#imgblog5{
+	background:url(../img/DSC_9276.JPG);
+	background-size:50% 100%;
+	background-repeat:no-repeat;
+	height:200px;
+}

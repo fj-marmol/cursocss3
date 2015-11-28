@@ -181,3 +181,65 @@ form input,form textarea{
 	padding:10px;
 	display: block;
 }
+
+/* blog */
+#contieneblog{
+	background:white;
+	box-shadow:0px 10px 25px rgba(0,0,0,0.3);
+	padding:10px;
+}
+
+#articulos{
+	width:66%;
+	float:left;
+}
+
+
+#articulos article{
+	width:100%;
+	float:none;
+	margin-bottom:40px;
+}
+
+aside{
+	width:30%;
+	height:100%;
+	float:right;
+	padding:10px;
+	background:rgba(0,0,0,0.1);
+}
+
+#imgblog1{
+	background:url(../img/DSC_9140.JPG);
+	background-size:50% 100%;
+	background-repeat:no-repeat;
+	height:200px;
+}
+
+#imgblog2{
+	background:url(../img/DSC_9153.JPG);
+	background-size:50% 100%;
+	background-repeat:no-repeat;
+	height:200px;
+}
+
+#imgblog3{
+	background:url(../img/DSC_9180.JPG);
+	background-size:50% 100%;
+	background-repeat:no-repeat;
+	height:200px;
+}
+
+#imgblog4{
+	background:url(../img/DSC_9253.JPG);
+	background-size:50% 100%;
+	background-repeat:no-repeat;
+	height:200px;
+}
+
+#imgblog5{
+	background:url(../img/DSC_9276.JPG);
+	background-size:50% 100%;
+	background-repeat:no-repeat;
+	height:200px;
+}

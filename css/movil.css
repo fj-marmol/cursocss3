@@ -104,3 +104,42 @@ form input,form textarea{
 	margin:10px auto;
 	display: block;
 }
+
+/* blog */
+
+#imgblog1{
+	background:url(../img/DSC_9140.JPG);
+	background-size:100% 100%;
+	width:100%;
+	height:200px;
+	border:1px solid black;
+}
+
+#imgblog2{
+	background:url(../img/DSC_9153.JPG);
+	background-size:100% 100%;
+	width:100%;
+	height:200px;
+}
+
+#imgblog3{
+	background:url(../img/DSC_9180.JPG);
+	background-size:100% 100%;
+	width:100%;
+	height:200px;
+}
+
+#imgblog4{
+	background:url(../img/DSC_9253.JPG);
+	background-size:100% 100%;
+	width:100%;
+	height:200px;
+}
+
+#imgblog5{
+	background:url(../img/DSC_9276.JPG);
+	background-size:100% 100%;
+	width:100%;
+	height:200px;
+}
+
