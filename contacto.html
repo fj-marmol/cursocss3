@@ -18,7 +18,7 @@
     </script>
   	 <link rel=Stylesheet href="css/base.css" type="text/css" />
     <title>Mi prueba HTML5</title>
-  	 <plantilla><link rel=Stylesheet href="css/pc1.css" type="text/css" /></plantilla>
+  	 <plantilla><link rel=Stylesheet href="css/movil.css" type="text/css" /></plantilla>
 </head>
 <body>
   <select name="plantilla">
@@ -44,25 +44,28 @@
           <li><a href="productos.html">Productos</a></li>
           <li><a href="contacto.html">Contacto</a></li>
           </ul></nav>
+          <div style="clear: both;"></div>
     	</header>
      <section>
-     	<h3>Formulario de contacto </h3>
-      <p>Si desea ponerse en contacto conmigo rellene el formulario y pulse en enviar</p>
-      <form method="POST" action="procesaformulario.php">
-        <div class="formLeyenda">
-          Nombre:
-        </div>
-        <input type="text" name="nombre">
-        <div class="formLeyenda">
-          Correo electrónico:
-        </div>
-        <input type="text" name="email">
-        <div class="formLeyenda">
-          Mensaje:
-        </div>
-        <textarea name="mensaje"></textarea>
-        <input type="submit" value="Enviar">
-       </form>
+    	 <div id="contieneFormulario">
+     		<h3>Formulario de contacto </h3>
+      		<p>Si desea ponerse en contacto conmigo rellene el formulario y pulse en enviar</p>
+	      	<form method="POST" action="procesaformulario.php" id="formContacto">
+		        <div class="formLeyenda">
+		          Nombre:
+		        </div>
+		        <input type="text" name="nombre" id="nombre">
+		        <div class="formLeyenda">
+		          Correo electrónico:
+		        </div>
+		        <input type="text" name="email" id="email">
+		        <div class="formLeyenda">
+		          Mensaje:
+		        </div>
+		        <textarea name="mensaje" id="mensaje"></textarea>
+		        <input type="submit" value="Enviar" id="contactoEnviar">
+	       	</form>
+         </div>
      </section>
     	<footer><h6>
         (c) 2015 Paco Mármol
