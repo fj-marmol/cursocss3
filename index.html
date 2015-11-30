@@ -3,22 +3,38 @@
 <head>
 	 <meta charset="utf-8">
   	 <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+
   	 <script type="text/javascript">
   		$(document).ready(inicio)
       	function inicio(){
-           $("select").change(cambiacss)
+          
+           $("select").change(cambiacss);
+           /*
+           if(window.innerWidth < 400 && (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/Android/i)) ){
+        	   $("plantilla").html('<link rel="stylesheet" href="css/movil.css" type="text/css" />');
+           }else if (window.innerWidth >= 400 && window.innerWidth < 800 && (navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Android/i))){
+        	   $("plantilla").html('<link rel="stylesheet" href="css/tablet.css" type="text/css" />');
+           }else if (window.innerWidth >= 800 && window.innerWidth < 1200 ){
+        	   $("plantilla").html('<link rel="stylesheet" href="css/pc1.css" type="text/css" />');
+           }else {
+        	   $("plantilla").html('<link rel="stylesheet" href="css/pchd.css" type="text/css" />');
+  			}
+           */
          }
          function cambiacss(){
-           
            var plantilla = $("select").val();
-
-           $("plantilla").html('<link rel=Stylesheet href="css/'+plantilla+'.css" type="text/css" />');
-           
+           $("plantilla").html('<link id="miplantilla" rel=Stylesheet href="css/'+plantilla+'.css" type="text/css" />');        
          }
+         
     </script>
   	 <link rel=Stylesheet href="css/base.css" type="text/css" />
     <title>Mi prueba HTML5</title>
-  	 <plantilla><link rel=Stylesheet href="css/pc1.css" type="text/css" /></plantilla>
+  	 <plantilla>
+  	 	<link rel="stylesheet" href="css/movil.css" type="text/css" media="handheld and (min-width:1px) and (max-width:400px)" />
+  	 	<link rel="stylesheet" href="css/tablet.css" type="text/css" media="screen and (min-width:1px) and (max-width:680px)" />
+  	 	<link rel="stylesheet" href="css/pc1.css" type="text/css" media="screen and (min-width:681px) and (max-width:1200px)" />
+  	 	<link rel="stylesheet" href="css/pchd.css" type="text/css" media="screen and (min-width:1201px) and (max-width:3600px)" />
+  	 </plantilla>
 </head>
 <body>
   <select name="plantilla">
@@ -84,6 +100,7 @@
             </p>
           </div>             
         </article>
+        <div style="clear:both;"/>
     	</section>
     	<footer><h6>
         (c) 2015 Paco Mármol
